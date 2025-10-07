@@ -8,7 +8,7 @@ body.theme-light {
   --c-sakura-accent-strong: #bb0bac;
   --c-sakura-glow: #ffe5fb;
   --c-sakura-text: #3d033a;
-  --c-sakura-text-soft: #940168;
+  --c-sakura-text-soft: #ffb3f5;
 
   --c-bg-base: var(--c-sakura-bg);
   --c-bg-panel: linear-gradient(145deg, var(--c-sakura-panel-from), var(--c-sakura-panel-to));
