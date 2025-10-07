@@ -1,0 +1,19 @@
+/* Effets et animations globaux réutilisables (extraits pour alléger les composants) */
+
+/* Pulse doux générique (peut être appliqué via .fx-soft-pulse) */
+@keyframes fx-soft-pulse {
+  0% { box-shadow:0 0 12px 2px rgba(255,79,216,0.45),0 0 24px 6px rgba(164,0,255,0.35); }
+  100% { box-shadow:0 0 24px 4px rgba(255,79,216,0.65),0 0 48px 14px rgba(164,0,255,0.55); }
+}
+.fx-soft-pulse { animation: fx-soft-pulse 2s ease-in-out infinite alternate; }
+
+/* Glow focus accessible */
+.fx-focusable:focus { outline:none; box-shadow:0 0 0 4px rgba(164,0,255,0.35),0 0 16px rgba(226,176,255,0.50); }
+
+/* Fade utilitaire */
+.fx-fade-enter-active,.fx-fade-leave-active { transition:opacity .8s ease; }
+.fx-fade-enter-from,.fx-fade-leave-to { opacity:0; }
+
+/* Zoom apparition */
+@keyframes fx-zoom-in { from { opacity:0; transform:scale(.85); filter:blur(8px);} to { opacity:1; transform:scale(1); filter:blur(0);} }
+.fx-zoom-in { animation: fx-zoom-in 1s var(--ease-standard) both; }

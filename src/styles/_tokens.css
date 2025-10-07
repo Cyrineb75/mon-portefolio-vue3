@@ -1,0 +1,74 @@
+/* 🎨 Tokens principaux */
+:root {
+  /* Couleurs base */
+  --color-nuit: #0b0a1f;
+  --color-violet-sombre: #1d1145;
+  --color-violet-clair: #5e4777;
+  --color-violet-median: #472a66;
+  --color-blanc: #ffffff;
+  --color-violet-fluo: #a400ff;
+  --color-rose-poudre: #e2b0ff;
+  /* Héritage / anciens accents */
+  --color-or-doux: #f1f395; /* or doux (aligné avec c-warm-light) */
+  --color-bleu-etoile: #4aa8ff; /* bleu accent utilisé dans anciens styles */
+
+  /* Palette UI */
+  --c-rose-lumineux: #e2b6ff;
+  --c-rose-vif: #d48cfd;
+  --c-violet-medium: #6b52b4;
+  --c-violet-bright: #7f6fff;
+  --c-purple-accent-2: #9a40ee;
+  --c-purple-modal-bg: #2f244b;
+  --c-purple-heading: #7446e7;
+  --c-button-base: #800097;
+  --c-button-hover: #af3dc7;
+  --c-danger: #ff0000;
+  --c-danger-light: #ff4d4d;
+  --c-pink-hot: #ff80ff;
+  --c-pink-neon: #ff4fd8;
+  --c-cyan-neon: #00cfff;
+  --c-warm-light: #f1f395;
+  --c-warm-edge: #eeeaac;
+  --c-pink-cloud: #ffd6e0;
+  --c-pink-fog: #ffe6fa;
+  --c-purple-deep: #2d1b4f;
+  /* Glow intro */
+  --c-text-glow: #f3eaff;
+  /* Gradients alt (cards) */
+  --c-gradient-alt-start: var(--c-violet-medium);
+  --c-gradient-alt-end: var(--c-violet-bright);
+  /* Fond intro */
+  --c-bg-intro: linear-gradient(135deg, #110826 0%, #1d1145 45%, #311540 100%);
+
+  /* Ombres & effets */
+  --shadow-panel: 0 4px 24px rgba(0,0,0,0.35);
+  --shadow-glow-card: 0 6px 32px var(--c-violet-medium), 0 0 24px var(--color-violet-fluo);
+  --shadow-focus-ring: 0 0 0 4px rgba(164,0,255,0.35), 0 0 12px rgba(226,176,255,0.45);
+  --shadow-glow-button: 0 0 16px var(--color-violet-fluo), 0 0 28px var(--color-rose-poudre);
+
+  /* Transitions */
+  --ease-standard: cubic-bezier(.4,.2,.3,1);
+  --transition-fast: 180ms var(--ease-standard);
+  --transition-medium: 320ms var(--ease-standard);
+
+  /* Thème dynamique */
+  --c-bg-base: var(--color-nuit);
+  --c-bg-panel: linear-gradient(145deg, var(--color-violet-sombre), var(--color-violet-clair));
+  --c-text-primary: var(--color-blanc);
+  --c-text-paragraph: rgba(210, 182, 247, 0.96);
+  --c-border-strong: var(--color-violet-fluo);
+  --c-border-soft: rgba(226,176,255,0.35);
+  --c-accent-primary: var(--color-violet-fluo);
+  --c-accent-secondary: var(--color-rose-poudre);
+  --c-link: var(--color-rose-poudre);
+  --c-link-hover: var(--color-violet-fluo);
+  --c-gradient-surface: linear-gradient(120deg, var(--color-violet-clair) 60%, var(--c-rose-vif) 100%);
+  --c-header-bg: linear-gradient(120deg, var(--color-violet-median), var(--color-violet-clair));
+
+  /* Titres */
+  --c-title-text: var(--color-rose-poudre);
+  --c-title-shadow: 0 0 10px #a400ff55, 0 0 18px #e2b0ff40;
+  --c-title-bg: linear-gradient(120deg, rgba(164,0,255,0.28), rgba(226,176,255,0.12));
+  --c-title-border: rgba(226,176,255,0.32);
+  --c-title-bar-gradient: linear-gradient(var(--color-violet-fluo,#a400ff), var(--color-rose-poudre,#e2b0ff));
+}

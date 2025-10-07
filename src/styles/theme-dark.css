@@ -1,0 +1,20 @@
+/* Thème sombre */
+body.theme-dark {
+  --c-bg-base: var(--color-nuit);
+  --c-bg-panel: linear-gradient(145deg, var(--color-violet-sombre), var(--color-violet-clair));
+  --c-text-primary: var(--color-blanc);
+  --c-text-paragraph: rgba(210, 182, 247, 0.96);
+  --c-border-strong: var(--color-violet-fluo);
+  --c-border-soft: rgba(226,176,255,0.35);
+  --c-accent-primary: var(--color-violet-fluo);
+  --c-accent-secondary: var(--color-rose-poudre);
+  --c-link: var(--color-rose-poudre);
+  --c-link-hover: var(--color-violet-fluo);
+  --c-gradient-surface: linear-gradient(120deg, var(--color-violet-clair) 60%, var(--c-rose-vif) 100%);
+  --c-header-bg: linear-gradient(120deg, var(--color-violet-median), var(--color-violet-clair));
+  --c-title-text: #e9c4ff;
+  --c-title-shadow: 0 0 10px #a400ff55, 0 0 18px #e2b0ff40;
+  --c-title-bg: linear-gradient(120deg, rgba(164,0,255,0.28), rgba(226,176,255,0.12));
+  --c-title-border: rgba(226,176,255,0.32);
+  --c-title-bar-gradient: linear-gradient(var(--color-violet-fluo,#a400ff), var(--color-rose-poudre,#e2b0ff));
+}
