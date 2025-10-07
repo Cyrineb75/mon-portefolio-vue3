@@ -3,9 +3,9 @@
   <header class="header">
     <div class="logo logo-link" @click="scrollToTop">Mon Portefolio</div>
     <nav class="menu" aria-label="Navigation principale">
-      <a href="#presentation" :class="{ active: activeSection === 'presentation' }">Présentation</a>
-      <a href="#creations" :class="{ active: activeSection === 'creations' }">Créations</a>
-      <a href="#contact" :class="{ active: activeSection === 'contact' }">Contact</a>
+      <a href="#presentation" @click.prevent="scrollToSection('presentation')" :class="{ active: activeSection === 'presentation' }">Présentation</a>
+      <a href="#creations" @click.prevent="scrollToSection('creations')" :class="{ active: activeSection === 'creations' }">Créations</a>
+      <a href="#contact" @click.prevent="scrollToSection('contact')" :class="{ active: activeSection === 'contact' }">Contact</a>
     </nav>
     <div class="header-actions">
       <slot name="actions"></slot>
@@ -40,6 +40,19 @@ onMounted(() => {
 // Fonction pour faire défiler vers le haut de la page lors du clic sur le logo
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Pour faire défiler vers une section du site depuis le menu
+function scrollToSection(id) {
+  const el = document.getElementById(id)
+  if (!el) return
+  const headerEl = document.querySelector('.header')
+  const offset = (headerEl?.offsetHeight || 0) + 12 // légère marge
+  const rect = el.getBoundingClientRect()
+  let target = rect.top + window.scrollY - offset
+  if (target < 0) target = 0
+  window.scrollTo({ top: target, behavior: 'smooth' })
+  activeSection.value = id
 }
 </script>
 
