@@ -81,7 +81,7 @@ import { useRouter } from 'vue-router'
 const projects = ref([
   {
     title: "Mon CV en HTML & CSS",
-    image: "src/assets/image/Screenshot-mon-cv.png",
+    image: "/Screenshot-mon-cv.png",
     date: "30/10/2024",
     tech: ["HTML", "CSS"],
     site: null,
@@ -89,14 +89,14 @@ const projects = ref([
   },
   {
     title: "Cahier des charges - La Socketerie",
-    image: "/src/assets/image/Screenshot-cahier-des-charges.png",
+    image: "/Screenshot-cahier-des-charges.png",
     date: "02/12/2024",
     tech: ["PDF", "Analyse", "Conception"],
     site: "./devoir-cahier-des-charges.pdf",
   },
   {
     title: "Dynamiser un espace commentaire",
-    image: "src/assets/image/Screenshot-dynamiser-js.png",
+    image: "/Screenshot-dynamiser-js.png",
     date: "11/08/2025",
     tech: ["HTML", "CSS", "JavaScript"],
     site: null,
